@@ -1,0 +1,14 @@
+/Users/teenudeekshith/Desktop/word_guessing_game/bin/Debug/net10.0/word_guessing_game
+/Users/teenudeekshith/Desktop/word_guessing_game/bin/Debug/net10.0/word_guessing_game.deps.json
+/Users/teenudeekshith/Desktop/word_guessing_game/bin/Debug/net10.0/word_guessing_game.runtimeconfig.json
+/Users/teenudeekshith/Desktop/word_guessing_game/bin/Debug/net10.0/word_guessing_game.dll
+/Users/teenudeekshith/Desktop/word_guessing_game/bin/Debug/net10.0/word_guessing_game.pdb
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.GeneratedMSBuildEditorConfig.editorconfig
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.AssemblyInfoInputs.cache
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.AssemblyInfo.cs
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.csproj.CoreCompileInputs.cache
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.dll
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/refint/word_guessing_game.dll
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.pdb
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/word_guessing_game.genruntimeconfig.cache
+/Users/teenudeekshith/Desktop/word_guessing_game/obj/Debug/net10.0/ref/word_guessing_game.dll
