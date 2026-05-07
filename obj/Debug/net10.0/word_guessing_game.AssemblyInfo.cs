@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("word_guessing_game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a92c5daad4c94305ba0ebc3aa65ca514b87ba900")]
 [assembly: System.Reflection.AssemblyProductAttribute("word_guessing_game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("word_guessing_game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

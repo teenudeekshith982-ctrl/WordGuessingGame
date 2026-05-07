@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/teenudeekshith/Desktop/word_guessing_game/word_guessing_game.csproj",
+      "projectUniqueName": "/Users/teenudeekshith/Desktop/GenSparkTrainingAssignments/word_guessing_game/word_guessing_game.csproj",
       "projectName": "word_guessing_game",
-      "projectPath": "/Users/teenudeekshith/Desktop/word_guessing_game/word_guessing_game.csproj",
+      "projectPath": "/Users/teenudeekshith/Desktop/GenSparkTrainingAssignments/word_guessing_game/word_guessing_game.csproj",
       "packagesPath": "/Users/teenudeekshith/.nuget/packages/",
-      "outputPath": "/Users/teenudeekshith/Desktop/word_guessing_game/obj/",
+      "outputPath": "/Users/teenudeekshith/Desktop/GenSparkTrainingAssignments/word_guessing_game/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/teenudeekshith/.nuget/NuGet/NuGet.Config"

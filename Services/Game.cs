@@ -6,6 +6,11 @@ namespace word_guessing_game.Services;
 public class Game
 {
     private string _secretWord = string.Empty;
+    WordProvider wordprovider = new WordProvider();
+    GuessValidator guessValidator = new GuessValidator();
+    FeedbackGenerator feedbackGenerator = new FeedbackGenerator();
+    
+    // class Game constructor describes the rules if a player dont know the rules or new to the game.
     public Game()
     {
         Console.WriteLine(" -----    Welcome to Word Guessing Game   ----- ");
@@ -40,13 +45,13 @@ public class Game
 
     }
     
-    
+    // main Method that run the game it has the core logic.
     public void StartGame()
     {   
-        WordProvider wordprovider = new WordProvider();
-        GuessValidator guessValidator = new GuessValidator();
-        FeedbackGenerator feedbackGenerator = new FeedbackGenerator();
-        _secretWord = wordprovider.Get_Secret_Word();
+        
+        // Getting secret word 
+        _secretWord = wordprovider.Get_Secret_Word(); 
+        // For having different colors for each attempt in the ouptut.
         List<ConsoleColor> colors = new List<ConsoleColor>
         {
             ConsoleColor.Red,
@@ -57,19 +62,31 @@ public class Game
             ConsoleColor.Magenta
         };
         
+        // Maxattempts = 6
         int maxAttempts = 6;
 
         int attemptsUsed = 1;
-
+        
+        
+        
+         /*
+          Im storing the previous guessed words in the list becasue the user might enter his 1st guess in the fifth guess also right
+            so i need to store all the guessed words in a list so that the user cannot repeat any word that he had already been guessed.
+             
+        */ 
+        
         List<string> previousguessedwords = new List<string>();
         while (attemptsUsed <= maxAttempts)
             {
                 try
-                {   
-                    Console.ForegroundColor = colors[attemptsUsed-1];
+                {
+                    Console.ForegroundColor = colors[attemptsUsed - 1];
                     Console.WriteLine($"\nAttempt {attemptsUsed} :");
                     Console.WriteLine("Please Guess the Word");
+                    // Taking input from the user and also converting it into uppercase
                     string userGuess = Console.ReadLine().ToUpper();
+                    
+                    // validiating the inputs and handling duplicate guesses
                     guessValidator.Isvalidguess(userGuess);
                     guessValidator.Isduplicateguess(userGuess, previousguessedwords);
                     Console.WriteLine("----- OUTPUT -----");
@@ -81,7 +98,7 @@ public class Game
                     Console.WriteLine("\n");
                     if (guessValidator.IsUserGuessedCorrect(userGuess, _secretWord))
                     {
-                        Console.WriteLine(" You Won!!!");
+                        Console.WriteLine("You Won!!!");
                         break;
                     }
                     else
@@ -93,7 +110,7 @@ public class Game
 
                     attemptsUsed++;
                     previousguessedwords.Add(userGuess);
-                    
+
                 }
                 catch (InvalidGuessException ige)
                 {
@@ -104,8 +121,46 @@ public class Game
                     Console.WriteLine(dge.Message);
                 }
 
+                
+            }
+        string message;
+
+        switch (attemptsUsed)
+        {
+            case 1:
+                message = "Genius!";
+                break;
+
+            case 2:
+                message = "Excellent!";
+                break;
+
+            case 3:
+                message = "Great job!";
+                break;
+
+            case 4:
+                message = "Good work!";
+                break;
+
+            case 5:
+                message = "Nice try!";
+                break;
+
+            case 6:
+                message = "That was close!";
+                break;
+
+            default:
+                message = "Well played!";
+                break;
+        }
+
+        Console.WriteLine(message);
+        Console.WriteLine("Thanks for playing");
+
             }
             
-            Console.WriteLine("Thanks for playing!");
-    }
+            
 }
+
